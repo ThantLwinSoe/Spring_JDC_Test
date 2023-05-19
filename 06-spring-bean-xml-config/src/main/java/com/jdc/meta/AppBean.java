@@ -11,5 +11,5 @@ import org.springframework.stereotype.Component;
 @Retention(RetentionPolicy.RUNTIME)
 @Component
 public @interface AppBean {
-
+	String value() default "";
 }

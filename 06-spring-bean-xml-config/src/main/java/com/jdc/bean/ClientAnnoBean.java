@@ -3,7 +3,8 @@ package com.jdc.bean;
 import com.jdc.meta.AppBean;
 
 //@Component("overwriteBeanName")
-@AppBean
+@AppBean("customBean")
 public class ClientAnnoBean {
-
+	
+	
 }
