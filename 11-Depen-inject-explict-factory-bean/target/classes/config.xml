@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	
+	<bean id="client" class="com.jdc.bean.ClientFactory"></bean>
+	<bean  factory-bean="client" factory-method="generate">
+		<constructor-arg ref="cc"></constructor-arg>
+	</bean>
+	
+	<bean id="mc" class="com.jdc.bean.MyDefaultService" >
+	</bean>
+	
+	<bean id="cc" class="com.jdc.bean.CustomService"></bean>
+</beans>
