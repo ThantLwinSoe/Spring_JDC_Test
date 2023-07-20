@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!-- Client bean -->
+    <bean id="client" class="com.jdc.beans.Client" autowire="constructor"></bean>
+	
+	<bean id="service" class="com.jdc.beans.DefaultService"></bean>
+	 
+	 <!-- for setter and byName testing     
+    <bean id="customService" name="service" class="com.jdc.beans.CustomService"></bean>
+    -->
+
+</beans>
