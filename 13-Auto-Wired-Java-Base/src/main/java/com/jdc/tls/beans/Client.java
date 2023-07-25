@@ -13,7 +13,7 @@ public class Client {
 	
 	public Client(@Autowired Service service) {
 		this.service = service;
-	}
+	} 
 	
 	public void doProcess() {
 		service.doWork();

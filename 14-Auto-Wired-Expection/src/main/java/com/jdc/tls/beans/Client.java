@@ -6,14 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Client {
 	
-/*	@Autowired
+	@Autowired
+//	@Qualifier("custom")
 	private Service service;
-*/
-	private Service service;
-	
-	public Client(@Autowired Service service) {
-		this.service = service;
-	}
 	
 	public void doProcess() {
 		service.doWork();
