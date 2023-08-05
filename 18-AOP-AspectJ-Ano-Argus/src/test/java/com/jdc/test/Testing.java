@@ -16,6 +16,10 @@ public class Testing {
 	@Test
 	public void testOne() {
 		client.doProcess("Aung Myin",4);
+		client.doResult("Kyaw Kyar",9);
+		
+		
+		client.doArithmetic(10, 0);
 	}
 
 }
