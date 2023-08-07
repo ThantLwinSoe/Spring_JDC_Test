@@ -1,6 +1,8 @@
 package com.jdc.balance.model.form;
 
-public class SignInForm {
+public record SignInForm(
+			String email
+		)  {
 	
 	
 

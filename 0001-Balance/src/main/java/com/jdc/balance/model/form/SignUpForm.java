@@ -1,6 +1,11 @@
 package com.jdc.balance.model.form;
 
-public class SignUpForm {
+public record SignUpForm (
+			
+			String name,
+			String email,
+			String password
+		) {
 	
 
 }
